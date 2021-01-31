@@ -1,0 +1,42 @@
+/* *{
+  margin: 0px;
+  padding: 0px;
+} */
+
+html{
+  scroll-snap-type:y mandatory;
+}
+.app{
+  height: 100vh;
+  background-color: black;
+  display: grid;
+  place-items: center;
+}
+
+.app__videos{
+  position: relative;
+  /* height:80%; */
+  height:700px;
+  /* height: 800px; */
+  overflow: scroll;
+  border-radius: 20px;
+  width: 80%;
+  max-width: 500px;
+  scroll-snap-type:y mandatory;
+
+}
+.app__videos::-webkit-scrollbar{
+  display: none;
+}
+/* .app__videos{
+  -ms-overflow-style:none;
+  scrollbar-width: none;
+} */
+
+
+@media only screen and (max-width:960px){
+  .app__videos{
+     height: 85%;
+  }
+
+}

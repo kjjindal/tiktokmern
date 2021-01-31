@@ -1,0 +1,11 @@
+.videoheader{
+    position: absolute;
+    top:20px;
+    left: 20px;
+    
+}
+.videoheader__logo{
+    width:100px;
+    object-fit: contain;
+    filter: invert(1);
+}
